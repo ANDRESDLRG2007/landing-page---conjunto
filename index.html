@@ -5,29 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ResiHub | Sabana Grande Reservado 3</title>
 <meta name="description" content="La app oficial del Conjunto Residencial Sabana Grande Reservado 3: circulares, paquetes, visitantes, reservas y PQRS en un solo lugar.">
+<script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: {
       extend: {
         colors: {
-          blue: {
-            50: '#fbf1f1',
-            100: '#f4dede',
-            200: '#e8bcbc',
-            800: '#753232',
-            900: '#8f3737',
+          brand: {
+            50: '#fbf4f3',
+            100: '#f6e8e6',
+            200: '#edcfca',
+            800: '#873a3a',
+            900: '#A64646',
             950: '#542727'
+          },
+          slate: {
+            50: '#fcf8f7',
+            100: '#f6efed',
+            200: '#eadfdd',
+            300: '#d8c8c5',
+            400: '#b5a19d',
+            500: '#8a7470',
+            600: '#6b5552',
+            700: '#52403d',
+            800: '#3e2e2c',
+            900: '#2c2020',
+            950: '#1d1414'
           }
         }
       }
     }
   };
 </script>
-<script src="https://cdn.tailwindcss.com"></script>
 <style>
 :root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}
-body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
 .hero-background{background-image:linear-gradient(90deg,rgba(50,20,20,.88),rgba(75,30,30,.76)),url("./assets/conjunto.jpg");background-size:cover;background-position:center 55%}
 </style>
 </head>
@@ -50,17 +63,17 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <!-- Header -->
 <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-    <a href="#inicio" class="flex items-center gap-2 font-bold text-blue-900">
-      <span class="grid h-9 w-9 place-items-center rounded-xl bg-blue-900 text-white">R</span>
+    <a href="#inicio" class="flex items-center gap-2 font-bold text-brand-900">
+      <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand-900 text-white">R</span>
       ResiHub
     </a>
     <nav class="hidden gap-6 text-sm font-medium text-slate-600 md:flex" aria-label="Principal">
-      <a class="hover:text-blue-900" href="#residentes">Residentes</a>
-      <a class="hover:text-blue-900" href="#registro">Cómo registrarte</a>
-      <a class="hover:text-blue-900" href="#administracion">Administración</a>
-      <a class="hover:text-blue-900" href="#vigilancia">Vigilancia</a>
+      <a class="hover:text-brand-900" href="#residentes">Residentes</a>
+      <a class="hover:text-brand-900" href="#registro">Cómo registrarte</a>
+      <a class="hover:text-brand-900" href="#administracion">Administración</a>
+      <a class="hover:text-brand-900" href="#vigilancia">Vigilancia</a>
     </nav>
-    <a href="#descargar" class="rounded-lg bg-blue-900 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-800">Descargar</a>
+    <a href="#descargar" class="rounded-lg bg-brand-900 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-800">Descargar</a>
   </div>
 </header>
 
@@ -69,16 +82,16 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <section id="inicio" class="hero-background text-white">
   <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:py-24">
     <div>
-      <p class="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-blue-100">CONJUNTO RESIDENCIAL SABANA GRANDE RESERVADO 3</p>
+      <p class="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-brand-100">CONJUNTO RESIDENCIAL SABANA GRANDE RESERVADO 3</p>
       <h1 class="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">Gestión moderna, segura y centralizada para Sabana Grande Reservado 3</h1>
-      <p class="mt-5 max-w-xl text-lg text-blue-100">La app oficial para conectar residentes, administración y portería en un solo lugar.</p>
+      <p class="mt-5 max-w-xl text-lg text-brand-100">La app oficial para conectar residentes, administración y portería en un solo lugar.</p>
       <div id="descargar" class="mt-8 flex flex-col gap-3 sm:flex-row">
         <!-- Pon la ruta de tu QR en data-qr (ej. img/qr-android.png). Si está vacío se muestra una imagen básica -->
-        <button type="button" data-store="Android" data-qr="" data-download-url="https://ejemplo.com/resihub-android.apk" class="flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-blue-950 hover:bg-blue-50">
+        <button type="button" data-store="Android" data-qr="" data-download-url="https://ejemplo.com/resihub-android.apk" class="flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-brand-950 hover:bg-brand-50">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 3.5v17c0 .6.7 1 1.2.6l14-8.5c.5-.3.5-.9 0-1.2l-14-8.5C5.7 2.5 5 2.900 5 3.500z"/></svg>
           Descargar en Android
         </button>
-        <button type="button" data-store="iOS" data-qr="" data-download-url="https://apps.apple.com/app/id0000000000" class="flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-blue-950 hover:bg-blue-50">
+        <button type="button" data-store="iOS" data-qr="" data-download-url="https://apps.apple.com/app/id0000000000" class="flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-brand-950 hover:bg-brand-50">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.700c0-2.400 2-3.500 2.100-3.600-1.100-1.700-2.900-1.900-3.500-1.900-1.500-.2-2.900.9-3.700.9-.8 0-1.900-.9-3.200-.8-1.600 0-3.100 1-4 2.400-1.700 3-.4 7.400 1.200 9.800.8 1.200 1.800 2.500 3 2.400 1.200 0 1.700-.8 3.100-.8 1.500 0 1.900.8 3.200.8 1.300 0 2.100-1.200 2.900-2.300.9-1.300 1.300-2.600 1.300-2.700 0 0-2.400-1-2.400-3.800zM14 5.600c.7-.8 1.100-1.900 1-3-1 0-2.100.7-2.800 1.500-.6.700-1.200 1.800-1 2.900 1.100.1 2.100-.6 2.800-1.400z"/></svg>
           Descargar en iOS
         </button>
@@ -91,8 +104,8 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
       <div class="rounded-3xl bg-white p-4 text-slate-800 shadow-2xl">
         <div class="mb-3 flex items-center justify-between text-xs font-semibold text-slate-500"><span>Hoy</span><span>Torre 4 · Apto 502</span></div>
         <div class="space-y-3">
-          <div class="rounded-2xl bg-blue-50 p-3"><p class="text-xs font-semibold text-blue-900"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-megaphone"/></svg> Circular oficial</p><p class="text-sm">Mantenimiento de ascensores · Lee y confirma</p></div>
-          <div class="rounded-2xl bg-emerald-50 p-3"><p class="text-xs font-semibold text-emerald-700"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-package"/></svg> Paquete en portería</p><p class="text-sm">Tienes una encomienda con foto de evidencia</p></div>
+          <div class="rounded-2xl bg-brand-50 p-3"><p class="text-xs font-semibold text-brand-900"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-megaphone"/></svg> Circular oficial</p><p class="text-sm">Mantenimiento de ascensores · Lee y confirma</p></div>
+          <div class="rounded-2xl bg-brand-50 p-3"><p class="text-xs font-semibold text-brand-900"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-package"/></svg> Paquete en portería</p><p class="text-sm">Tienes una encomienda con foto de evidencia</p></div>
           <div class="rounded-2xl bg-slate-100 p-3"><p class="text-xs font-semibold text-slate-600"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-qr"/></svg> Visitante autorizado</p><p class="text-sm">Código QR generado para tu invitado</p></div>
         </div>
       </div>
@@ -103,33 +116,33 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <!-- Residentes -->
 <section id="residentes" class="mx-auto max-w-6xl px-4 py-16">
   <div class="mx-auto max-w-2xl text-center">
-    <h2 class="text-2xl font-bold text-blue-950 sm:text-3xl">Todo lo que necesitas como residente</h2>
+    <h2 class="text-2xl font-bold text-brand-950 sm:text-3xl">Todo lo que necesitas como residente</h2>
     <p class="mt-3 text-slate-600">Cinco módulos pensados para simplificar tu día a día en el conjunto.</p>
   </div>
   <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-blue-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-megaphone"/></svg></div>
-      <h3 class="font-semibold text-blue-950">Circulares Oficiales</h3>
+      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-megaphone"/></svg></div>
+      <h3 class="font-semibold text-brand-950">Circulares Oficiales</h3>
       <p class="mt-2 text-sm text-slate-600">Recibe los comunicados en tiempo real, con archivos adjuntos (PDF e imágenes) y confirmación de lectura.</p>
     </article>
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-blue-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-package"/></svg></div>
-      <h3 class="font-semibold text-blue-950">Control de Paquetes en Portería</h3>
+      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-package"/></svg></div>
+      <h3 class="font-semibold text-brand-950">Control de Paquetes en Portería</h3>
       <p class="mt-2 text-sm text-slate-600">Alerta instantánea con fotografía de evidencia cuando llega tu correspondencia, y confirmación al recogerla.</p>
     </article>
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-blue-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-qr"/></svg></div>
-      <h3 class="font-semibold text-blue-950">Visitantes y Mudanzas</h3>
+      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-qr"/></svg></div>
+      <h3 class="font-semibold text-brand-950">Visitantes y Mudanzas</h3>
       <p class="mt-2 text-sm text-slate-600">Genera códigos QR de acceso rápido para familiares, amigos y proveedores, y gestiona trasteos con el visto bueno de la administración.</p>
     </article>
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-blue-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-calendar"/></svg></div>
-      <h3 class="font-semibold text-blue-950">Reservas de Zonas Comunes</h3>
+      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-calendar"/></svg></div>
+      <h3 class="font-semibold text-brand-950">Reservas de Zonas Comunes</h3>
       <p class="mt-2 text-sm text-slate-600">Consulta la disponibilidad y solicita espacios como el salón social o el gimnasio desde tu celular.</p>
     </article>
     <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:col-span-2 lg:col-span-1">
-      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-blue-50 text-blue-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-file"/></svg></div>
-      <h3 class="font-semibold text-blue-950">Radicación de PQRS</h3>
+      <div class="mb-4 grid h-11 w-11 place-items-center rounded-xl bg-brand-50 text-brand-900"><svg class="h-6 w-6" aria-hidden="true"><use href="#i-file"/></svg></div>
+      <h3 class="font-semibold text-brand-950">Radicación de PQRS</h3>
       <p class="mt-2 text-sm text-slate-600">Envía peticiones, quejas, reclamos y sugerencias, y sigue el estado de cada una hasta su respuesta.</p>
     </article>
   </div>
@@ -139,29 +152,29 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <section id="registro" class="bg-white py-16">
   <div class="mx-auto max-w-6xl px-4">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-2xl font-bold text-blue-950 sm:text-3xl">Cómo obtener tu acceso</h2>
+      <h2 class="text-2xl font-bold text-brand-950 sm:text-3xl">Cómo obtener tu acceso</h2>
       <p class="mt-3 text-slate-600">El acceso es exclusivo para residentes. Necesitas un <strong>código de invitación único</strong> emitido por la administración.</p>
     </div>
     <ol class="mt-10 grid gap-5 md:grid-cols-4">
       <li class="rounded-2xl border border-slate-200 p-5">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-blue-900 text-sm font-bold text-white">1</span>
-        <h3 class="mt-3 font-semibold text-blue-950">Solicita tu código</h3>
+        <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">1</span>
+        <h3 class="mt-3 font-semibold text-brand-950">Solicita tu código</h3>
         <p class="mt-1 text-sm text-slate-600">Pídelo a la administración del conjunto. Cada código es alfanumérico y único.</p>
       </li>
       <li class="rounded-2xl border border-slate-200 p-5">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-blue-900 text-sm font-bold text-white">2</span>
-        <h3 class="mt-3 font-semibold text-blue-950">Revisa tu correo</h3>
+        <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">2</span>
+        <h3 class="mt-3 font-semibold text-brand-950">Revisa tu correo</h3>
         <p class="mt-1 text-sm text-slate-600">Recibirás la invitación por correo electrónico (enviada mediante Brevo). Revisa también la carpeta de spam.</p>
       </li>
       <li class="rounded-2xl border border-slate-200 p-5">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-blue-900 text-sm font-bold text-white">3</span>
-        <h3 class="mt-3 font-semibold text-blue-950">Descarga e ingresa el código</h3>
+        <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">3</span>
+        <h3 class="mt-3 font-semibold text-brand-950">Descarga e ingresa el código</h3>
         <p class="mt-1 text-sm text-slate-600">Instala la app, elige “Registrarse con Código de Invitación” y completa tus datos.</p>
       </li>
-      <li class="rounded-2xl border border-emerald-200 bg-emerald-50 p-5">
-        <span class="grid h-8 w-8 place-items-center rounded-full bg-emerald-600 text-sm font-bold text-white"><svg class="h-4 w-4" aria-hidden="true"><use href="#i-check"/></svg></span>
-        <h3 class="mt-3 font-semibold text-emerald-800">Inicia sesión sin contraseña</h3>
-        <p class="mt-1 text-sm text-emerald-900/80">Te enviamos por SMS un código OTP de 6 dígitos cada vez que ingresas. Nada que memorizar.</p>
+      <li class="rounded-2xl border border-brand-200 bg-brand-50 p-5">
+        <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-800 text-sm font-bold text-white"><svg class="h-4 w-4" aria-hidden="true"><use href="#i-check"/></svg></span>
+        <h3 class="mt-3 font-semibold text-brand-950">Inicia sesión sin contraseña</h3>
+        <p class="mt-1 text-sm text-brand-950/80">Te enviamos por SMS un código OTP de 6 dígitos cada vez que ingresas. Nada que memorizar.</p>
       </li>
     </ol>
     <p class="mx-auto mt-8 max-w-2xl rounded-xl bg-slate-100 p-4 text-center text-sm text-slate-600"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-lock"/></svg> Tus datos se tratan conforme a la <strong>Ley 1581 de 2012 de Habeas Data</strong>. Solo la administración puede emitir invitaciones, lo que garantiza que únicamente residentes verificados accedan a la plataforma.</p>
@@ -170,18 +183,18 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 
 <!-- Administración -->
 <section id="administracion" class="mx-auto max-w-6xl px-4 py-16">
-  <div class="grid items-center gap-8 rounded-3xl bg-blue-950 p-8 text-white md:grid-cols-2 md:p-12">
+  <div class="grid items-center gap-8 rounded-3xl bg-brand-950 p-8 text-white md:grid-cols-2 md:p-12">
     <div>
-      <p class="text-sm font-semibold uppercase tracking-wide text-blue-200">Para la Administración y el Consejo</p>
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-200">Para la Administración y el Consejo</p>
       <h2 class="mt-2 text-2xl font-bold sm:text-3xl">Control centralizado de la copropiedad</h2>
-      <p class="mt-3 text-blue-100">Una sola herramienta para administrar, comunicar y rendir cuentas con transparencia.</p>
+      <p class="mt-3 text-brand-100">Una sola herramienta para administrar, comunicar y rendir cuentas con transparencia.</p>
     </div>
     <ul class="space-y-3 text-sm">
-      <li class="flex gap-3"><span class="text-emerald-400"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Tableros de métricas en vivo de la operación del conjunto.</li>
-      <li class="flex gap-3"><span class="text-emerald-400"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Emisión de circulares con analíticas de lectura por residente.</li>
-      <li class="flex gap-3"><span class="text-emerald-400"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Gestión de tarifas del parqueadero de visitantes.</li>
-      <li class="flex gap-3"><span class="text-emerald-400"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Auditoría de bitácoras y trazabilidad de las novedades.</li>
-      <li class="flex gap-3"><span class="text-emerald-400"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Emisión y control de códigos de invitación para residentes.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Tableros de métricas en vivo de la operación del conjunto.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Emisión de circulares con analíticas de lectura por residente.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Gestión de tarifas del parqueadero de visitantes.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Auditoría de bitácoras y trazabilidad de las novedades.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Emisión y control de códigos de invitación para residentes.</li>
     </ul>
   </div>
 </section>
@@ -190,34 +203,34 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <section id="vigilancia" class="bg-white py-16">
   <div class="mx-auto max-w-6xl px-4">
     <div class="mx-auto max-w-2xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-wide text-emerald-700">Para el Personal de Vigilancia</p>
-      <h2 class="mt-2 text-2xl font-bold text-blue-950 sm:text-3xl">Una portería más ágil y trazable</h2>
+      <p class="text-sm font-semibold uppercase tracking-wide text-brand-800">Para el Personal de Vigilancia</p>
+      <h2 class="mt-2 text-2xl font-bold text-brand-950 sm:text-3xl">Una portería más ágil y trazable</h2>
     </div>
     <div class="mt-10 grid gap-5 sm:grid-cols-2">
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-blue-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-compass"/></svg> Minuta digital de ronda</h3><p class="mt-2 text-sm text-slate-600">Registra cada recorrido en el momento, sin papel y con historial consultable.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-blue-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-car"/></svg> Parqueadero de visitantes</h3><p class="mt-2 text-sm text-slate-600">Cálculo automático de tiempos y tarifas. Los cobros se hacen en portería: la app no procesa pagos en línea.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-blue-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-qr"/></svg> Ingreso con código QR</h3><p class="mt-2 text-sm text-slate-600">Valida visitantes autorizados por los residentes en segundos y deja el registro del acceso.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-blue-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-camera"/></svg> Reporte de novedades</h3><p class="mt-2 text-sm text-slate-600">Documenta incidentes con evidencia fotográfica y notifícalos a la administración.</p></div>
+      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-brand-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-compass"/></svg> Minuta digital de ronda</h3><p class="mt-2 text-sm text-slate-600">Registra cada recorrido en el momento, sin papel y con historial consultable.</p></div>
+      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-brand-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-car"/></svg> Parqueadero de visitantes</h3><p class="mt-2 text-sm text-slate-600">Cálculo automático de tiempos y tarifas. Los cobros se hacen en portería: la app no procesa pagos en línea.</p></div>
+      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-brand-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-qr"/></svg> Ingreso con código QR</h3><p class="mt-2 text-sm text-slate-600">Valida visitantes autorizados por los residentes en segundos y deja el registro del acceso.</p></div>
+      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-brand-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-camera"/></svg> Reporte de novedades</h3><p class="mt-2 text-sm text-slate-600">Documenta incidentes con evidencia fotográfica y notifícalos a la administración.</p></div>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
 <section class="mx-auto max-w-3xl px-4 py-16">
-  <h2 class="text-center text-2xl font-bold text-blue-950">Preguntas frecuentes</h2>
+  <h2 class="text-center text-2xl font-bold text-brand-950">Preguntas frecuentes</h2>
   <div class="mt-8 space-y-3">
-    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-blue-950">No tengo código de invitación, ¿qué hago?</summary><p class="mt-2 text-sm text-slate-600">Solicítalo directamente a la administración del conjunto. Solo ellos pueden emitirlo.</p></details>
-    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-blue-950">No me llega el SMS con el código de 6 dígitos</summary><p class="mt-2 text-sm text-slate-600">Verifica que tu número esté bien escrito y que tengas señal. Espera un minuto y solicita un nuevo código; si persiste, contacta a la administración.</p></details>
-    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-blue-950">¿Puedo pagar el parqueadero desde la app?</summary><p class="mt-2 text-sm text-slate-600">No. La app calcula tiempo y tarifa; el pago se realiza en portería.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No tengo código de invitación, ¿qué hago?</summary><p class="mt-2 text-sm text-slate-600">Solicítalo directamente a la administración del conjunto. Solo ellos pueden emitirlo.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No me llega el SMS con el código de 6 dígitos</summary><p class="mt-2 text-sm text-slate-600">Verifica que tu número esté bien escrito y que tengas señal. Espera un minuto y solicita un nuevo código; si persiste, contacta a la administración.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">¿Puedo pagar el parqueadero desde la app?</summary><p class="mt-2 text-sm text-slate-600">No. La app calcula tiempo y tarifa; el pago se realiza en portería.</p></details>
   </div>
 </section>
 
 <!-- CTA final -->
-<section class="bg-blue-900 py-14 text-center text-white">
+<section class="bg-brand-900 py-14 text-center text-white">
   <div class="mx-auto max-w-2xl px-4">
     <h2 class="text-2xl font-bold sm:text-3xl">Tu comunidad, conectada</h2>
-    <p class="mt-3 text-blue-100">Descarga ResiHub y empieza con tu código de invitación.</p>
-    <a href="#descargar" class="mt-6 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-blue-950 hover:bg-blue-50">Descargar la app</a>
+    <p class="mt-3 text-brand-100">Descarga ResiHub y empieza con tu código de invitación.</p>
+    <a href="#descargar" class="mt-6 inline-block rounded-xl bg-white px-6 py-3 font-semibold text-brand-950 hover:bg-brand-50">Descargar la app</a>
   </div>
 </section>
 </main>
@@ -231,7 +244,7 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
 <dialog id="qr-modal" class="w-[92%] max-w-sm rounded-2xl p-0 shadow-2xl backdrop:bg-slate-900/60">
   <div class="p-6 text-center">
     <div class="flex items-start justify-between">
-      <h2 id="qr-title" class="text-lg font-bold text-blue-950">Descargar para Android</h2>
+      <h2 id="qr-title" class="text-lg font-bold text-brand-950">Descargar para Android</h2>
       <button type="button" id="qr-close" class="rounded-lg p-1 text-slate-500 hover:bg-slate-100" aria-label="Cerrar">
         <svg class="h-5 w-5" aria-hidden="true"><use href="#i-x"/></svg>
       </button>
@@ -240,13 +253,13 @@ body{background:#f8fafc;color:#0f172a;font-family:ui-sans-serif,system-ui,-apple
     <a id="qr-link" class="mx-auto mt-5 block w-fit" aria-label="Abrir enlace de descarga">
       <img id="qr-img" alt="Código QR de descarga" class="h-56 w-56 rounded-xl border border-slate-200 bg-white object-contain p-2">
     </a>
-    <a id="qr-download" class="mt-4 inline-block font-semibold text-blue-900 underline underline-offset-4">Abrir enlace de descarga</a>
+    <a id="qr-download" class="mt-4 inline-block font-semibold text-brand-900 underline underline-offset-4">Abrir enlace de descarga</a>
   </div>
 </dialog>
 
 <script>
 (function(){
-  var ph='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f1f5f9"/><g fill="none" stroke="#94a3b8" stroke-width="8"><rect x="40" y="40" width="44" height="44" rx="4"/><rect x="116" y="40" width="44" height="44" rx="4"/><rect x="40" y="116" width="44" height="44" rx="4"/><path d="M116 116h20v20h-20zM160 116v.1M116 160h.1M144 160h16v-16"/></g><text x="100" y="188" font-family="Arial" font-size="12" text-anchor="middle" fill="#64748b">QR próximamente</text></svg>');
+  var ph='data:image/svg+xml;utf8,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#f6efed"/><g fill="none" stroke="#b5a19d" stroke-width="8"><rect x="40" y="40" width="44" height="44" rx="4"/><rect x="116" y="40" width="44" height="44" rx="4"/><rect x="40" y="116" width="44" height="44" rx="4"/><path d="M116 116h20v20h-20zM160 116v.1M116 160h.1M144 160h16v-16"/></g><text x="100" y="188" font-family="Arial" font-size="12" text-anchor="middle" fill="#6b5552">QR próximamente</text></svg>');
   var modal=document.getElementById('qr-modal'),img=document.getElementById('qr-img'),title=document.getElementById('qr-title');
   var qrLink=document.getElementById('qr-link'),downloadLink=document.getElementById('qr-download');
   document.querySelectorAll('[data-store]').forEach(function(b){

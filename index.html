@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ResiHub | Sabana Grande Reservado 3</title>
 <meta name="description" content="La app oficial del Conjunto Residencial Sabana Grande Reservado 3: circulares, paquetes, visitantes, reservas y PQRS en un solo lugar.">
+<link rel="icon" type="image/svg+xml" href="./assets/logos/resihub-logo.svg">
+<link rel="alternate icon" type="image/png" href="./assets/logos/resihub-logo-512.png">
+<link rel="apple-touch-icon" href="./assets/logos/resihub-logo-512.png">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -64,8 +67,8 @@ body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple
 <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
     <a href="#inicio" class="flex items-center gap-2 font-bold text-brand-900">
-      <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand-900 text-white">R</span>
-      ResiHub
+      <img src="./assets/logos/resihub-logo.svg" alt="ResiHub" class="h-9 w-9 object-contain">
+      <span>ResiHub</span>
     </a>
     <nav class="hidden gap-6 text-sm font-medium text-slate-600 md:flex" aria-label="Principal">
       <a class="hover:text-brand-900" href="#residentes">Residentes</a>
@@ -156,25 +159,25 @@ body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple
       <li class="rounded-2xl border border-slate-200 p-5">
         <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">1</span>
         <h3 class="mt-3 font-semibold text-brand-950">Solicita tu código</h3>
-        <p class="mt-1 text-sm text-slate-600">Pídelo a la administración del conjunto. Cada código es alfanumérico y único.</p>
+        <p class="mt-1 text-sm text-slate-600">Pídelo a la administración del conjunto o recíbelo por correo. Cada código de invitación es alfanumérico y único.</p>
       </li>
       <li class="rounded-2xl border border-slate-200 p-5">
         <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">2</span>
-        <h3 class="mt-3 font-semibold text-brand-950">Revisa tu correo</h3>
-        <p class="mt-1 text-sm text-slate-600">Recibirás la invitación por correo electrónico (enviada mediante Brevo). Revisa también la carpeta de spam.</p>
+        <h3 class="mt-3 font-semibold text-brand-950">Ingresa tus datos</h3>
+        <p class="mt-1 text-sm text-slate-600">Instala la app, elige “Registrarse con Código de Invitación” y completa tus datos con tu correo electrónico personal.</p>
       </li>
       <li class="rounded-2xl border border-slate-200 p-5">
         <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-900 text-sm font-bold text-white">3</span>
-        <h3 class="mt-3 font-semibold text-brand-950">Descarga e ingresa el código</h3>
-        <p class="mt-1 text-sm text-slate-600">Instala la app, elige “Registrarse con Código de Invitación” y completa tus datos.</p>
+        <h3 class="mt-3 font-semibold text-brand-950">Valida con código OTP</h3>
+        <p class="mt-1 text-sm text-slate-600">Verifica tu cuenta ingresando el código OTP de 6 dígitos enviado directamente a tu bandeja de entrada.</p>
       </li>
       <li class="rounded-2xl border border-brand-200 bg-brand-50 p-5">
         <span class="grid h-8 w-8 place-items-center rounded-full bg-brand-800 text-sm font-bold text-white"><svg class="h-4 w-4" aria-hidden="true"><use href="#i-check"/></svg></span>
-        <h3 class="mt-3 font-semibold text-brand-950">Inicia sesión sin contraseña</h3>
-        <p class="mt-1 text-sm text-brand-950/80">Te enviamos por SMS un código OTP de 6 dígitos cada vez que ingresas. Nada que memorizar.</p>
+        <h3 class="mt-3 font-semibold text-brand-950">Inicia sesión sin contraseñas</h3>
+        <p class="mt-1 text-sm text-brand-950/80">Accede con tu correo registrado y valida el código OTP de 6 dígitos (válido por 5 minutos). Sin contraseñas ni SMS.</p>
       </li>
     </ol>
-    <p class="mx-auto mt-8 max-w-2xl rounded-xl bg-slate-100 p-4 text-center text-sm text-slate-600"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-lock"/></svg> Tus datos se tratan conforme a la <strong>Ley 1581 de 2012 de Habeas Data</strong>. Solo la administración puede emitir invitaciones, lo que garantiza que únicamente residentes verificados accedan a la plataforma.</p>
+    <p class="mx-auto mt-8 max-w-2xl rounded-xl bg-slate-100 p-4 text-center text-sm text-slate-600"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-lock"/></svg> Tus datos se tratan conforme a la <strong>Ley 1581 de 2012 de Habeas Data</strong>. Autenticación 100% segura por correo y código OTP: sin contraseñas vulnerables ni validación por SMS.</p>
   </div>
 </section>
 
@@ -192,6 +195,7 @@ body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple
       <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Gestión de tarifas del parqueadero de visitantes.</li>
       <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Auditoría de bitácoras y trazabilidad de las novedades.</li>
       <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Emisión y control de códigos de invitación para residentes.</li>
+      <li class="flex gap-3"><span class="text-brand-200"><svg class="h-5 w-5 shrink-0" aria-hidden="true"><use href="#i-check"/></svg></span> Acceso seguro sin contraseñas mediante correo registrado y código OTP de 6 dígitos.</li>
     </ul>
   </div>
 </section>
@@ -202,6 +206,7 @@ body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple
     <div class="mx-auto max-w-2xl text-center">
       <p class="text-sm font-semibold uppercase tracking-wide text-brand-800">Para el Personal de Vigilancia</p>
       <h2 class="mt-2 text-2xl font-bold text-brand-950 sm:text-3xl">Una portería más ágil y trazable</h2>
+      <p class="mt-3 text-slate-600">Acceso seguro con correo asignado y código OTP de 6 dígitos. Operación ágil, trazable y sin contraseñas en portería.</p>
     </div>
     <div class="mt-10 grid gap-5 sm:grid-cols-2">
       <div class="rounded-2xl border border-slate-200 p-6"><h3 class="font-semibold text-brand-950"><svg class="mr-1.5 -mt-0.5 inline h-4 w-4" aria-hidden="true"><use href="#i-compass"/></svg> Minuta digital de ronda</h3><p class="mt-2 text-sm text-slate-600">Registra cada recorrido en el momento, sin papel y con historial consultable.</p></div>
@@ -230,8 +235,9 @@ body{background:#fcf8f7;color:#2c2020;font-family:ui-sans-serif,system-ui,-apple
 <section class="mx-auto max-w-3xl px-4 py-16">
   <h2 class="text-center text-2xl font-bold text-brand-950">Preguntas frecuentes</h2>
   <div class="mt-8 space-y-3">
-    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No tengo código de invitación, ¿qué hago?</summary><p class="mt-2 text-sm text-slate-600">Solicítalo directamente a la administración del conjunto. Solo ellos pueden emitirlo.</p></details>
-    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No me llega el SMS con el código de 6 dígitos</summary><p class="mt-2 text-sm text-slate-600">Verifica que tu número esté bien escrito y que tengas señal. Espera un minuto y solicita un nuevo código; si persiste, contacta a la administración.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No tengo código de invitación, ¿qué hago?</summary><p class="mt-2 text-sm text-slate-600">Solicítalo directamente a la administración del conjunto. Solo ellos pueden emitirlo para garantizar el acceso exclusivo de residentes verificados.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">¿Por qué no me piden contraseña ni SMS para ingresar?</summary><p class="mt-2 text-sm text-slate-600">ResiHub no utiliza contraseñas ni validación por SMS. Residentes, administradores y vigilantes inician sesión únicamente con su correo electrónico registrado y un código de verificación (OTP) de 6 dígitos que llega al correo con vigencia de 5 minutos.</p></details>
+    <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">No me llega el código OTP de 6 dígitos al correo</summary><p class="mt-2 text-sm text-slate-600">Verifica que tu correo esté bien escrito y revisa la carpeta de correo no deseado o spam. El código OTP tiene una vigencia de 5 minutos; si caduca, puedes solicitar uno nuevo directamente desde la app o comunicarte con la administración.</p></details>
     <details class="rounded-xl border border-slate-200 bg-white p-4"><summary class="cursor-pointer font-semibold text-brand-950">¿Puedo pagar el parqueadero desde la app?</summary><p class="mt-2 text-sm text-slate-600">No. La app calcula tiempo y tarifa; el pago se realiza en portería.</p></details>
   </div>
 </section>
